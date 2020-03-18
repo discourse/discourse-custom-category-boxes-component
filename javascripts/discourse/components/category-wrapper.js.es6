@@ -37,7 +37,6 @@ export default Component.extend({
   _applyBgColor(color) {
     let rnd = Math.floor(Math.random()*4);
     let bg = `${settings.category_background}-${rnd}`;
-    console.log(bg)
     this.element.style.backgroundColor = `rgba(${color.r},${color.g},${color.b},.5)`;
     this.element.style.backgroundImage = `url(${settings.theme_uploads[bg]})`;
     this.element.style.border = `1px solid #${this.c.color}`
