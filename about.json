@@ -1,0 +1,16 @@
+{
+  "name":"Custom Category Boxes with Featured Topics",
+  "assets":{
+    "halftones-0":"/assets/halftones/0.png",
+    "halftones-1":"/assets/halftones/1.png",
+    "halftones-2":"/assets/halftones/2.png",
+    "halftones-3":"/assets/halftones/3.png",
+    "crosshatch-0":"/assets/crosshatch/0.png",
+    "crosshatch-1":"/assets/crosshatch/1.png",
+    "crosshatch-2":"/assets/crosshatch/2.png",
+    "crosshatch-3":"/assets/crosshatch/3.png"
+  },
+  "about_url":null,
+  "liscense_url":null,
+  "component":true
+}
