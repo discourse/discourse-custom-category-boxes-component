@@ -18,9 +18,7 @@
         {{c.name}}
         ({{c.topic_count}})
       </h2>
-
     </a>
-
     {{#unless c.isMuted}}
     <div class='custom-featured-topics'>
     {{#if c.topics}}
@@ -33,5 +31,6 @@
     </div>
     {{/unless}}
   </section>
+
   <a class="custom-category-more-link" href={{c.url}}>More topics...</a>
 {{/if}}
