@@ -1,5 +1,5 @@
 {
-  "name":"Custom Category Boxes with Featured Topics",
+  "name":"Custom Category Boxes",
   "assets":{
     "halftones-0":"/assets/halftones/0.png",
     "halftones-1":"/assets/halftones/1.png",
@@ -10,7 +10,7 @@
     "crosshatch-2":"/assets/crosshatch/2.png",
     "crosshatch-3":"/assets/crosshatch/3.png"
   },
-  "about_url":null,
-  "liscense_url":null,
+  "about_url": "https://github.com/jordanvidrine/custom-category-boxes",
+  "liscense_url": "https://github.com/jordanvidrine/custom-category-boxes/blob/master/LICENSE.md",
   "component":true
 }
