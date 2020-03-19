@@ -10,7 +10,7 @@
     "crosshatch-2":"/assets/crosshatch/2.png",
     "crosshatch-3":"/assets/crosshatch/3.png"
   },
-  "about_url": "https://github.com/jordanvidrine/custom-category-boxes",
-  "liscense_url": "https://github.com/jordanvidrine/custom-category-boxes/blob/master/LICENSE.md",
+  "about_url": "https://github.com/discourse/discourse-custom-category-boxes-component",
+  "liscense_url": "https://github.com/discourse/discourse-custom-category-boxes-component/blob/master/LICENSE.md",
   "component":true
 }
