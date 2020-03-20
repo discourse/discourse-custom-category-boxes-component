@@ -1,68 +1,42 @@
 .custom-categories-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 25px;
+
   .custom-category {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex: 1 0 28%;
-    max-width: 28%;
-    min-height: 200px;
-    border-radius: 2px;
-    margin: 25px 25px 0 0;
     padding: 15px;
+    border-radius: 2px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: grid;
+    align-content: space-between;
 
-    @media (max-width: 1100px) {
-      flex: 1 0 40%;
-      max-width: 40%;
-    }
+    .custom-featured-topics ul {
+      list-style: none;
+      margin: 0;
+      display: grid;
+      grid-row-gap: 10px;
 
-    @media (max-width: 600px) {
-      flex: 1 0 85%;
-      max-width: 85%;
-      margin: 25px 10px 0 10px;
-    }
+      li {
+        display: grid;
+        grid-template-columns: 1fr 15fr;
+        background-color: rgba($secondary,.9);
+        border-radius: 5px;
+        padding: 8px 12px;
+        border: 1px solid transparent;
+        align-items: center;
 
-    a #custom-category-title {
-      color: $primary;
-      text-align: left;
-      font-size: $font-up-3;
-      margin: 5px 0 20px 0;
-      font-weight: bold;
-    }
+        &:hover {
+          border: 1px solid rgba($primary,.5);
+          box-shadow: 1px 1px 0px rgba($primary,.25)
+        }
 
-    section {
-      width: 100%;
-    }
+        a { color: $primary; }
 
-    .custom-featured-topics {
-      ul {
-        list-style: none;
-        margin: 0;
-        li {
-          display: flex;
-          padding: 8px 12px;
-          background-color: rgba($secondary,.9);
-          border-radius: 5px;
-          margin-bottom: 5px;
-          border: 1px solid transparent;
-          &:hover {
-            border: 1px solid rgba($primary,.5);
-            box-shadow: 1px 1px 0px rgba($primary,.25)
-          }
-          a {
-            color: $primary;
-          }
-          svg.d-icon {
-            color: $primary;
-            margin-right: 10px;
-          }
+        svg.d-icon {
+          color: $primary;
+          margin-right: 10px;
         }
       }
     }
@@ -75,9 +49,18 @@
       background-color: rgba($secondary,.75);
       border-radius: 2px;
       border: 1px solid transparent;
-      &:hover {
-        box-shadow: 1px 1px 1px rgba($primary,.25)
-      }
+      display: inline-block;
+      max-width: max-content;
+
+      &:hover { box-shadow: 1px 1px 1px rgba($primary,.25) }
+    }
+
+    a #custom-category-title {
+      color: $primary;
+      text-align: left;
+      font-size: $font-up-3;
+      margin: 5px 0 20px 0;
+      font-weight: bold;
     }
   }
 }
