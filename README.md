@@ -1,5 +1,5 @@
 # Custom Category Boxes Component
-This is a theme component that will render your categories as boxes with customized backgrounds on your categories page.
+This is a theme component that will render your categories as boxes with customized backgrounds on your categories page. This component will also render each category page with a category banner if `show_banner` is selected.
 
 __For this to work... in the settings area `desktop category page style` needs to be set to either `categories with Featured Topics` or `Boxes with Featured Topics`__
 

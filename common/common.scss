@@ -65,3 +65,29 @@
     }
   }
 }
+
+/* Custom Category Banner */
+.custom-category-banner-wrapper {
+  padding-top: 100px;
+}
+.custom-category-banner {
+  width: 50%;
+  margin: 0 auto 0 auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  h1 {
+    font-size: $font-up-5;
+  }
+}
+
+.category-page-custom-banner {
+  #main-outlet {
+    padding-top: 50px;
+  }
+}
