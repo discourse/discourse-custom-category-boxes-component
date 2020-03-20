@@ -40,6 +40,9 @@ export default {
 
         } else {
           html.classList.remove("category-page-custom-banner")
+          component.setProperties({
+            show_banner: false
+          })
         }
       })
 
