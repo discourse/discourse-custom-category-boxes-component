@@ -10,3 +10,4 @@ category_background:
 
 show_banner:
   default: true
+  description: "If selected, a styled banner will appear on each category page, matching the look of the category box."
