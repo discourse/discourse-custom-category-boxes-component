@@ -6,7 +6,7 @@ category_background:
     - crosshatch
     - custom
     - none
-  description: "<b>Halftones:</b> Select for a halftone pattern that fades into the category background.<br><b>Crosshatch:</b> Select for assorted crosshatch patterns to be showin in the category box background. <br><b>Custom:</b> To use, upload 4 .png files, using the naming convention <span>'custom-0, custom-1, etc.'</span><br><b>None:</b> Select for empty category background."
+  description: "<b>Halftones:</b> Select for a halftone pattern that fades into the category background.<br><b>Crosshatch:</b> Select for assorted crosshatch patterns to be shown in the category box background. <br><b>Custom:</b> To use, upload 4 .png files, using the naming convention <span>'custom-0, custom-1, etc.'</span><br><b>None:</b> Select for empty category background."
 
 show_banner:
   default: true
