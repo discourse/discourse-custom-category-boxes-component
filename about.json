@@ -11,6 +11,6 @@
     "crosshatch-3":"/assets/crosshatch/3.png"
   },
   "about_url": "https://github.com/discourse/discourse-custom-category-boxes-component",
-  "liscense_url": "https://github.com/discourse/discourse-custom-category-boxes-component/blob/master/LICENSE.md",
+  "liscense_url": "https://github.com/discourse/discourse-custom-category-boxes-component/blob/main/LICENSE.md",
   "component":true
 }
