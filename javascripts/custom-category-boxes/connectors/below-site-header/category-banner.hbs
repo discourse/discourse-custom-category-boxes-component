@@ -1,13 +1,25 @@
 {{#if show_banner}}
-<div class="custom-category-banner-wrapper">
-  <div class="custom-category-banner"
-  style=
-    "background-color: {{backgroundColor}};
-    background-image: {{backgroundImage}};
-    border: {{border}};
-    box-shadow: {{boxShadow}};
-  ">
-<h1 class="custom-category-banner-title">{{title}}</h1>
-</div>
-</div>
+  <div class="custom-category-banner-wrapper">
+    <div
+      class="custom-category-banner"
+      style={{html-safe
+        (concat
+          "background-color: "
+          backgroundColor
+          ";"
+          "background-image: "
+          backgroundImage
+          ";"
+          "border: "
+          border
+          ";"
+          "box-shadow: "
+          boxShadow
+          ";"
+        )
+      }}
+    >
+      <h1 class="custom-category-banner-title">{{title}}</h1>
+    </div>
+  </div>
 {{/if}}
