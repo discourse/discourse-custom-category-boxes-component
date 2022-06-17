@@ -1,16 +1,16 @@
 {
-  "name":"Custom Category Boxes",
-  "assets":{
-    "halftones-0":"/assets/halftones/0.png",
-    "halftones-1":"/assets/halftones/1.png",
-    "halftones-2":"/assets/halftones/2.png",
-    "halftones-3":"/assets/halftones/3.png",
-    "crosshatch-0":"/assets/crosshatch/0.png",
-    "crosshatch-1":"/assets/crosshatch/1.png",
-    "crosshatch-2":"/assets/crosshatch/2.png",
-    "crosshatch-3":"/assets/crosshatch/3.png"
-  },
+  "name": "Custom Category Boxes",
+  "component": true,
   "about_url": "https://github.com/discourse/discourse-custom-category-boxes-component",
-  "liscense_url": "https://github.com/discourse/discourse-custom-category-boxes-component/blob/main/LICENSE.md",
-  "component":true
+  "license_url": "https://github.com/discourse/discourse-custom-category-boxes-component/blob/main/LICENSE.md",
+  "assets": {
+    "halftones-0": "/assets/halftones/0.png",
+    "halftones-1": "/assets/halftones/1.png",
+    "halftones-2": "/assets/halftones/2.png",
+    "halftones-3": "/assets/halftones/3.png",
+    "crosshatch-0": "/assets/crosshatch/0.png",
+    "crosshatch-1": "/assets/crosshatch/1.png",
+    "crosshatch-2": "/assets/crosshatch/2.png",
+    "crosshatch-3": "/assets/crosshatch/3.png"
+  }
 }
