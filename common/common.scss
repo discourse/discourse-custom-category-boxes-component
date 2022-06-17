@@ -22,18 +22,20 @@
       li {
         display: grid;
         grid-template-columns: 1fr 15fr;
-        background-color: rgba($secondary,.9);
+        background-color: rgba($secondary, 0.9);
         border-radius: 5px;
         padding: 8px 12px;
         border: 1px solid transparent;
         align-items: center;
 
         &:hover {
-          border: 1px solid rgba($primary,.5);
-          box-shadow: 1px 1px 0px rgba($primary,.25)
+          border: 1px solid rgba($primary, 0.5);
+          box-shadow: 1px 1px 0px rgba($primary, 0.25);
         }
 
-        a { color: $primary; }
+        a {
+          color: $primary;
+        }
 
         svg.d-icon {
           color: $primary;
@@ -47,14 +49,16 @@
       font-size: $font-down-2;
       margin-top: 15px;
       padding: 1px 7px 0px 7px;
-      background-color: rgba($secondary,.75);
+      background-color: rgba($secondary, 0.75);
       border-radius: 2px;
       border: 1px solid transparent;
       display: inline-block;
       // start at the first line of grid, and width is set to content inside
       justify-self: start;
 
-      &:hover { box-shadow: 1px 1px 1px rgba($primary,.25) }
+      &:hover {
+        box-shadow: 1px 1px 1px rgba($primary, 0.25);
+      }
     }
 
     a #custom-category-title {
