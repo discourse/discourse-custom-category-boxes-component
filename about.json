@@ -1,7 +1,7 @@
 {
   "name": "Custom Category Boxes",
   "component": true,
-  "about_url": "https://github.com/discourse/discourse-custom-category-boxes-component",
+  "about_url": "https://meta.discourse.org/t/custom-category-boxes/144865",
   "license_url": "https://github.com/discourse/discourse-custom-category-boxes-component/blob/main/LICENSE.md",
   "assets": {
     "halftones-0": "/assets/halftones/0.png",
