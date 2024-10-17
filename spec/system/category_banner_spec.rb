@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 RSpec.describe "DiscourseCustomCategoryBoxes - category banner", system: true do
   fab!(:current_user) { Fabricate(:admin) }
 
@@ -14,7 +15,7 @@ RSpec.describe "DiscourseCustomCategoryBoxes - category banner", system: true do
       sign_in(current_user)
     end
 
-    fab!(:category) { Fabricate(:category) }
+    fab!(:category)
     fab!(:topic) { Fabricate(:topic, category: category) }
     fab!(:post) { Fabricate(:post, topic: topic) }
 
