@@ -25,7 +25,7 @@ export default {
               border: `1px solid #${c.color}`,
               boxShadow: `8px 8px 0 #${c.color}32`,
             });
-          } catch (e) {
+          } catch {
             html.classList.remove("category-page-custom-banner");
             component.set("show_banner", false);
           }
