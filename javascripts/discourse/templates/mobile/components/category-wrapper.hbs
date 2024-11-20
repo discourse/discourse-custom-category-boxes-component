@@ -1,31 +1,31 @@
-{{#if hasTopics}}
+{{#if this.hasTopics}}
   <section>
-    <a href={{c.url}}>
-      {{#unless c.isMuted}}
-        {{#if c.uploaded_logo.url}}
+    <a href={{this.c.url}}>
+      {{#unless this.c.isMuted}}
+        {{#if this.c.uploaded_logo.url}}
           {{cdn-img
-            src=c.uploaded_logo.url
+            src=this.c.uploaded_logo.url
             class="logo"
-            width=c.uploaded_logo.width
-            height=c.uploaded_logo.height
+            width=this.c.uploaded_logo.width
+            height=this.c.uploaded_logo.height
           }}
         {{/if}}
       {{/unless}}
 
       <h2 id="custom-category-title">
-        {{category-title-before category=c}}
-        {{#if c.read_restricted}}
+        {{category-title-before category=this.c}}
+        {{#if this.c.read_restricted}}
           {{d-icon "lock"}}
         {{/if}}
-        {{c.name}}
-        ({{c.topic_count}})
+        {{this.c.name}}
+        ({{this.c.topic_count}})
       </h2>
     </a>
-    {{#unless c.isMuted}}
+    {{#unless this.c.isMuted}}
       <div class="custom-featured-topics">
-        {{#if c.topics}}
+        {{#if this.c.topics}}
           <ul>
-            {{#each c.topics as |topic|}}
+            {{#each this.c.topics as |topic|}}
               {{categories-boxes-topic topic=topic}}
             {{/each}}
           </ul>
@@ -34,5 +34,5 @@
     {{/unless}}
   </section>
 
-  <a class="custom-category-more-link" href={{c.url}}>More topics...</a>
+  <a class="custom-category-more-link" href={{this.c.url}}>More topics...</a>
 {{/if}}
