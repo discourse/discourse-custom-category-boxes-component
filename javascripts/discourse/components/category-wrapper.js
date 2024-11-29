@@ -1,13 +1,14 @@
 import Component from "@ember/component";
 import { readOnly } from "@ember/object/computed";
+import { classNames } from "@ember-decorators/component";
 import { afterRender } from "discourse-common/utils/decorators";
 
-export default Component.extend({
-  classNames: ["custom-category"],
-  topicCount: readOnly("c.topic_count"),
+@classNames("custom-category")
+export default class CategoryWrapper extends Component {
+  @readOnly("c.topic_count") topicCount;
 
   didInsertElement() {
-    this._super(...arguments);
+    super.didInsertElement(...arguments);
 
     if (this.topicCount) {
       this.set("hasTopics", true);
@@ -15,7 +16,7 @@ export default Component.extend({
     } else {
       this.element.style.display = "none";
     }
-  },
+  }
 
   hexToRgb(hex) {
     // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
@@ -32,7 +33,7 @@ export default Component.extend({
           b: parseInt(result[3], 16),
         }
       : null;
-  },
+  }
 
   @afterRender
   _applyBgColor(color) {
@@ -42,5 +43,5 @@ export default Component.extend({
     this.element.style.backgroundImage = `url(${settings.theme_uploads[bg]})`;
     this.element.style.border = `1px solid #${this.c.color}`;
     this.element.style.boxShadow = `8px 8px 0 rgba(${color.r},${color.g},${color.b},.25)`;
-  },
-});
+  }
+}
