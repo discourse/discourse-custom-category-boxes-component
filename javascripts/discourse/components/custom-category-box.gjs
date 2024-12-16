@@ -68,10 +68,10 @@ export default class CustomCategoryBox extends Component {
             {{#unless @category.isMuted}}
               {{#if @category.uploaded_logo.url}}
                 <CdnImg
-                  src="t@category.uploaded_logo.url"
+                  src={{@category.uploaded_logo.url}}
                   class="logo"
-                  width="@category.uploaded_logo.width"
-                  height="@category.uploaded_logo.height"
+                  width={{@category.uploaded_logo.width}}
+                  height={{@category.uploaded_logo.height}}
                 />
               {{/if}}
             {{/unless}}

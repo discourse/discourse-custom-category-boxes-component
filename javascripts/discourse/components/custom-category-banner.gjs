@@ -27,7 +27,7 @@ export default class CustomCategoryBanner extends Component {
   }
 
   get backgroundColor() {
-    return `#${this.category.color}65`;
+    return this.category ? `#${this.category.color}65` : null;
   }
 
   get backgroundImage() {
@@ -36,11 +36,11 @@ export default class CustomCategoryBanner extends Component {
   }
 
   get border() {
-    return `1px solid #${this.category.color}`;
+    return this.category ? `1px solid #${this.category.color}` : null;
   }
 
   get boxShadow() {
-    return `8px 8px 0 #${this.category.color}32`;
+    return this.category ? `8px 8px 0 #${this.category.color}32` : null;
   }
 
   @action
