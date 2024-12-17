@@ -4,7 +4,7 @@ import CategoriesBoxesTopic from "discourse/components/categories-boxes-topic";
 import CategoryTitleBefore from "discourse/components/category-title-before";
 import CdnImg from "discourse/components/cdn-img";
 import icon from "discourse-common/helpers/d-icon";
-import i18n from "discourse-common/helpers/i18n";
+import { i18n } from "discourse-i18n";
 
 function hexToRgb(hex) {
   // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
@@ -42,11 +42,13 @@ export default class CustomCategoryBox extends Component {
   }
 
   get styleAttribute() {
-    if (!this.hasTopics || !this.color) {
+    const { color } = this;
+
+    if (!this.hasTopics || !color) {
       return null;
     }
 
-    const { r, g, b } = this.color;
+    const { r, g, b } = color;
     const borderColor = this.args.category.color;
     const bgUrl = this.backgroundImageUrl;
 
@@ -62,7 +64,12 @@ export default class CustomCategoryBox extends Component {
 
   <template>
     {{#if this.hasTopics}}
-      <div class="custom-category" style={{this.styleAttribute}}>
+      <div
+        class="custom-category {{if @category.isMuted '--muted'}}"
+        style={{this.styleAttribute}}
+      >
+
+        {{log @category.isMuted}}
         <section>
           <a href={{@category.url}}>
             {{#unless @category.isMuted}}
@@ -91,7 +98,6 @@ export default class CustomCategoryBox extends Component {
                 <ul>
                   {{#each @category.topics as |topic|}}
                     <CategoriesBoxesTopic @topic={{topic}} />
-
                   {{/each}}
                 </ul>
               {{/if}}

@@ -1,7 +1,5 @@
 import Component from "@glimmer/component";
-import { tracked } from "@glimmer/tracking";
-import { concat } from "@ember/helper";
-import { action } from "@ember/object";
+import { cached } from "@glimmer/tracking";
 import didInsert from "@ember/render-modifiers/modifiers/did-insert";
 import didUpdate from "@ember/render-modifiers/modifiers/did-update";
 import { service } from "@ember/service";
@@ -12,7 +10,16 @@ import Category from "discourse/models/category";
 export default class CustomCategoryBanner extends Component {
   @service router;
 
-  @tracked category = null;
+  @cached
+  get category() {
+    if (!this.isCategoryRoute) {
+      return;
+    }
+
+    return Category.findBySlugPathWithID(
+      this.router.currentRoute.params.category_slug_path_with_id
+    );
+  }
 
   get bgIndex() {
     return Math.floor(Math.random() * 4);
@@ -26,30 +33,25 @@ export default class CustomCategoryBanner extends Component {
     return this.isCategoryRoute && settings.show_banner;
   }
 
-  get backgroundColor() {
-    return this.category ? `#${this.category.color}65` : null;
-  }
-
-  get backgroundImage() {
-    const bgKey = `${settings.category_background}-${this.bgIndex}`;
-    return `url(${settings.theme_uploads[bgKey]})`;
-  }
-
-  get border() {
-    return this.category ? `1px solid #${this.category.color}` : null;
-  }
-
-  get boxShadow() {
-    return this.category ? `8px 8px 0 #${this.category.color}32` : null;
-  }
-
-  @action
-  loadCategory() {
-    if (this.isCategoryRoute) {
-      this.category = Category.findBySlugPathWithID(
-        this.router.currentRoute.params.category_slug_path_with_id
-      );
+  get styleAttribute() {
+    if (!this.category) {
+      return null;
     }
+
+    const bgColor = `#${this.category.color}65`;
+    const bgKey = `${settings.category_background}-${this.bgIndex}`;
+    const bgImage = `url(${settings.theme_uploads[bgKey]})`;
+    const border = `1px solid #${this.category.color}`;
+    const boxShadow = `8px 8px 0 #${this.category.color}32`;
+
+    const styleString = `
+      background-color: ${bgColor};
+      background-image: ${bgImage};
+      border: ${border};
+      box-shadow: ${boxShadow};
+    `.trim();
+
+    return htmlSafe(styleString);
   }
 
   <template>
@@ -60,25 +62,7 @@ export default class CustomCategoryBanner extends Component {
         {{didInsert this.loadCategory}}
         {{didUpdate this.loadCategory this.router.currentRoute}}
       >
-        <div
-          class="custom-category-banner"
-          style={{htmlSafe
-            (concat
-              "background-color: "
-              this.backgroundColor
-              ";"
-              "background-image: "
-              this.backgroundImage
-              ";"
-              "border: "
-              this.border
-              ";"
-              "box-shadow: "
-              this.boxShadow
-              ";"
-            )
-          }}
-        >
+        <div class="custom-category-banner" style={{this.styleAttribute}}>
           <h1 class="custom-category-banner-title">{{this.category.name}}</h1>
         </div>
       </div>
