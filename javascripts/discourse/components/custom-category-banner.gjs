@@ -57,11 +57,7 @@ export default class CustomCategoryBanner extends Component {
   <template>
     {{#if this.shouldShow}}
       {{htmlClass "category-page-custom-banner"}}
-      <div
-        class="custom-category-banner-wrapper"
-        {{didInsert this.loadCategory}}
-        {{didUpdate this.loadCategory this.router.currentRoute}}
-      >
+      <div class="custom-category-banner-wrapper">
         <div class="custom-category-banner" style={{this.styleAttribute}}>
           <h1 class="custom-category-banner-title">{{this.category.name}}</h1>
         </div>
