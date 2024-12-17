@@ -68,8 +68,6 @@ export default class CustomCategoryBox extends Component {
         class="custom-category {{if @category.isMuted '--muted'}}"
         style={{this.styleAttribute}}
       >
-
-        {{log @category.isMuted}}
         <section>
           <a href={{@category.url}}>
             {{#unless @category.isMuted}}
