@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 hu:
+  more_topics: "További témák..."
+  theme_metadata:
+    settings:
+      category_background: "<b>Féltónusok:</b> Válassza ezt a féltónusmintát, amely elhalványul a kategória hátterében.<br><b>Keresztvonalas:</b> Válassza ki, ha a kategóriadoboz hátterében különböző keresztezési mintákat szeretne megjeleníteni. <br><b>Egyedi:</b> Használatához töltsön fel 4 .png fájlt a <span>'egyedi-0, egyéni-1 stb.' elnevezési konvencióval.</span><br><b>Nincs:</b> Válassza az üres kategória hátteréhez."
+      show_banner: "Ha be van jelölve, akkor minden kategóriaoldalon megjelenik egy stílusos szalaghirdetés, amely megfelel a kategóriamező megjelenésének."
