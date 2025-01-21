@@ -6,3 +6,7 @@
 
 de:
   more_topics: "Weitere Themen …"
+  theme_metadata:
+    settings:
+      category_background: "<b>Halbtöne:</b> Wähle ein Halbtonmuster aus, das in den Hintergrund der Kategorie übergeht.<br><b>Kreuzschraffur:</b> Wähle verschiedene Kreuzschraffurmuster aus, die im Hintergrund der Kategoriebox angezeigt werden. <br><b>Benutzerdefiniert:</b> Lade 4 .png-Dateien hoch und verwende dabei die Namenskonvention <span>„custom-0, custom-1 usw.“</span><br><b>Nichts:</b> Wähle diese Option für einen leeren Kategorienhintergrund."
+      show_banner: "Wenn du diese Option auswählst, wird auf jeder Kategorieseite ein Banner angezeigt, das dem Aussehen der Kategoriebox entspricht."

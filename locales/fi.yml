@@ -6,3 +6,7 @@
 
 fi:
   more_topics: "Lisää ketjuja..."
+  theme_metadata:
+    settings:
+      category_background: "<b>Puolisävy:</b> puolisävykuvio, joka häivyttyy luokan taustaan.<br><b>Ristikko:</b> erilaisia ristikkokuvioita näytettäväksi luokkaruudun taustalla. <br><b>Mukautettu:</b> lataa neljä png-tiedostoa, ja nimeä ne tyyliin <span>\"custom-0, custom-1, jne.\"</span><br><b>Ei mitään:</b> tyhjä luokan tausta."
+      show_banner: "Jos tämä on valittuna, jokaisella luokkasivulla näkyy tyylillinen banneri, joka vastaa luokkaruudun ulkoasua."

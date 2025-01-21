@@ -6,3 +6,7 @@
 
 fr:
   more_topics: "Plus de sujets..."
+  theme_metadata:
+    settings:
+      category_background: "<b>Demi-teintes :</b> sélectionnez cette option pour un motif de demi-teintes qui se fond dans l'arrière-plan de la catégorie.<br><b>Hachures :</b> sélectionnez cette option pour afficher des motifs de hachures variés dans l'arrière-plan de la zone de catégorie. <br><b>Personnalisé :</b> pour utiliser cette option, téléversez 4 fichiers .png en utilisant la convention de nommage <span>« custom-0, custom-1, etc. »</span><br><b>Aucun :</b> sélectionnez cette option pour obtenir un arrière-plan de catégorie vide."
+      show_banner: "Si cette option est sélectionnée, une bannière stylisée apparaîtra sur chaque page de catégorie, correspondant à l'apparence de la boîte de catégorie."

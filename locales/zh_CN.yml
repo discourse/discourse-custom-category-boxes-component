@@ -6,3 +6,7 @@
 
 zh_CN:
   more_topics: "更多话题…"
+  theme_metadata:
+    settings:
+      category_background: "<b>半色调</b>：选择后可获得能够淡入类别背景的半色调图案。<br><b>交叉线</b>：选择后可获得在类别框背景中显示的各种交叉线图案。<br><b>自定义</b>：要使用，请上传 4 个 .png 文件，使用命名约定 <span>custom-0、custom-1 等</span>。<br><b>无</b>：选择后可获得空的类别背景。"
+      show_banner: "如果选中，将在每个类别页面上出现一个样式横幅，与类别框的外观相匹配。"

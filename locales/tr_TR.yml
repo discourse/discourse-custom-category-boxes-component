@@ -6,3 +6,7 @@
 
 tr_TR:
   more_topics: "Daha fazla Konu..."
+  theme_metadata:
+    settings:
+      category_background: "<b>Yarı tonlar:</b> Kategori arka planına doğru kaybolan bir yarı ton deseni için seçin.<br><b>Çapraz tarama:</b> Kategori kutusu arka planında gösterilecek çeşitli çapraz tarama desenleri için seçin. <br><b>Özel:</b> Kullanmak için <span>'özel-0, özel-1 vb.' adlandırma kuralını kullanarak 4 adet .png dosyası yükleyin.</span><br><b>Hiçbiri:</b> Boş kategori arka planı için seçin."
+      show_banner: "Seçildiğinde, her kategori sayfasında kategori kutusunun görünümüne uygun, biçimlendirilmiş bir başlık görünür."

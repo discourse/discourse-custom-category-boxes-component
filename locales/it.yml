@@ -6,3 +6,7 @@
 
 it:
   more_topics: "Altri argomenti..."
+  theme_metadata:
+    settings:
+      category_background: "<b>Mezzitoni:</b> seleziona per un motivo a mezzitoni che sfuma sullo sfondo della categoria.<br><b>Tratteggio incrociato:</b> seleziona per vari motivi a tratteggio incrociato da visualizzare sullo sfondo del riquadro della categoria. <br><b>Personalizzato:</b> per utilizzarlo, carica 4 file .png, utilizzando la convenzione di denominazione <span>'custom-0, custom-1, ecc.'</span><br><b>Nessuno:</b> seleziona per uno sfondo di categoria vuoto."
+      show_banner: "Se selezionato, su ogni pagina di categoria apparirà un banner con stile, che riprende l'aspetto del riquadro della categoria."

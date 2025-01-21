@@ -6,3 +6,7 @@
 
 nl:
   more_topics: "Meer topics..."
+  theme_metadata:
+    settings:
+      category_background: "<b>Halftinten:</b> selecteer dit voor een halftintenpatroon dat vervaagt op de categorieachtergrond.<br><b>Geruit:</b> selecteer dit voor verschillende ruitpatronen die worden weergegeven op de categorieachtergrond. <br><b>Aangepast:</b> upload om dit te gebruiken 4 .png-bestanden, met de naamgevingsconventie <span>'custom-0, custom-1, enz.'</span><br><b>Geen:</b> selecteer dit voor een lege categorieachtergrond."
+      show_banner: "Als deze optie is geselecteerd, wordt op elke categoriepagina een gestileerde banner weergegeven die past bij het uiterlijk van het categorievak."
