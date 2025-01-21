@@ -6,3 +6,7 @@
 
 pt_BR:
   more_topics: "Mais tópicos..."
+  theme_metadata:
+    settings:
+      category_background: "<b>Meio-tons:</b> selecione um padrão de meio-tom que desaparece no plano de fundo da categoria.<br><b>Xadrez:</b> selecione padrões de xadrez sortidos para serem exibidos no plano de fundo da caixa da categoria. <br><b>Personalizado:</b> para usar, carregue quatro arquivos .png, usando a convenção de nomenclatura <span>\"custom-0, custom-1, etc.\"</span><br><b>Nenhum:</b> selecione um plano de fundo vazio para a categoria."
+      show_banner: "Se esta opção for selecionada, um banner estilizado será exibido na página de cada categoria, correspondendo à aparência da caixa dela."

@@ -6,3 +6,7 @@
 
 es:
   more_topics: "Más temas..."
+  theme_metadata:
+    settings:
+      category_background: "<b>Tonos medios:</b> Selecciona un patrón de tonos medios que se difumine en el fondo de la categoría.<br><b>Rayado:</b> Selecciona varios patrones de rayado que se mostrarán en el fondo del cuadro de categoría. <br><b>Personalizado:</b> Para utilizarlo, sube 4 archivos .png, utilizando la convención de nomenclatura <span>'personalizado-0, personalizado-1, etc.'</span><br><b>Ninguno:</b> Selecciónalo para que el fondo de la categoría esté vacío."
+      show_banner: "Si se selecciona, aparecerá un banner con estilo en cada página de categoría, que coincidirá con el aspecto de la caja de categoría."
