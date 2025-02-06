@@ -3,7 +3,7 @@ import { htmlSafe } from "@ember/template";
 import CategoriesBoxesTopic from "discourse/components/categories-boxes-topic";
 import CategoryTitleBefore from "discourse/components/category-title-before";
 import CdnImg from "discourse/components/cdn-img";
-import icon from "discourse-common/helpers/d-icon";
+import icon from "discourse/helpers/d-icon";
 import { i18n } from "discourse-i18n";
 
 function hexToRgb(hex) {
