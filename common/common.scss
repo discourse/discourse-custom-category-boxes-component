@@ -30,7 +30,7 @@
 
         &:hover {
           border: 1px solid rgba(var(--primary-rgb), 0.5);
-          box-shadow: 1px 1px 0px rgba(var(--primary-rgb), 0.25);
+          box-shadow: 1px 1px 0 rgba(var(--primary-rgb), 0.25);
         }
 
         a {
@@ -49,11 +49,12 @@
       color: $primary-medium;
       font-size: $font-down-2;
       margin-top: 15px;
-      padding: 1px 7px 0px 7px;
+      padding: 1px 7px 0 7px;
       background-color: rgba(var(--secondary-rgb), 0.75);
       border-radius: 2px;
       border: 1px solid transparent;
       display: inline-block;
+
       // start at the first line of grid, and width is set to content inside
       justify-self: start;
 
@@ -68,6 +69,7 @@
       font-size: var(--font-up-3);
       margin: 5px 0 20px 0;
       font-weight: bold;
+
       .d-icon {
         font-size: 0.75em;
         vertical-align: baseline;
@@ -97,6 +99,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   h1 {
     font-size: var(--font-up-5);
     padding: 20px;
