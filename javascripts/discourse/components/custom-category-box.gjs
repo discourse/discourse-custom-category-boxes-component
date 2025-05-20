@@ -82,7 +82,7 @@ export default class CustomCategoryBox extends Component {
             {{/unless}}
 
             <h2 id="custom-category-title">
-              <CategoryTitleBefore @categoryategory={{@category}} />
+              <CategoryTitleBefore @category={{@category}} />
               {{#if @category.read_restricted}}
                 {{icon "lock"}}
               {{/if}}
