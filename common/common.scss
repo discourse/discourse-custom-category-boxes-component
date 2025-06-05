@@ -22,15 +22,15 @@
       li {
         display: grid;
         grid-template-columns: 1fr 15fr;
-        background-color: rgba(var(--secondary-rgb), 0.9);
+        background-color: rgb(var(--secondary-rgb), 0.9);
         border-radius: 5px;
         padding: 8px 12px;
         border: 1px solid transparent;
         align-items: center;
 
         &:hover {
-          border: 1px solid rgba(var(--primary-rgb), 0.5);
-          box-shadow: 1px 1px 0 rgba(var(--primary-rgb), 0.25);
+          border: 1px solid rgb(var(--primary-rgb), 0.5);
+          box-shadow: 1px 1px 0 rgb(var(--primary-rgb), 0.25);
         }
 
         a {
@@ -50,7 +50,7 @@
       font-size: $font-down-2;
       margin-top: 15px;
       padding: 1px 7px 0 7px;
-      background-color: rgba(var(--secondary-rgb), 0.75);
+      background-color: rgb(var(--secondary-rgb), 0.75);
       border-radius: 2px;
       border: 1px solid transparent;
       display: inline-block;
@@ -59,7 +59,7 @@
       justify-self: start;
 
       &:hover {
-        box-shadow: 1px 1px 1px rgba(var(--primary-rgb), 0.25);
+        box-shadow: 1px 1px 1px rgb(var(--primary-rgb), 0.25);
       }
     }
 
