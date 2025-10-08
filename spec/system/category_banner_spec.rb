@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 RSpec.describe "DiscourseCustomCategoryBoxes - category banner", system: true do
-  fab!(:current_user) { Fabricate(:admin) }
+  fab!(:current_user, :admin)
 
   let(:category_page) { PageObjects::Pages::Category.new }
 
